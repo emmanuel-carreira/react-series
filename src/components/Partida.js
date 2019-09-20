@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Partida extends Component {
+class Partida extends React.Component {
     render() {
         return (
             <div>

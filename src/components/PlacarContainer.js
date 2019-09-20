@@ -3,17 +3,17 @@ import React from 'react';
 import Time from './Time';
 import Partida from './Partida';
 
-class PlacarContainer extends Component {   
+class PlacarContainer extends React.Component {   
     render() {
         return (
             <div>
-                <div>
+                <div style={{float: "left", "marginRight": "10px"}}>
                     <Time />
                 </div>
-                <div>
+                <div style={{float: "left", "marginRight": "10px"}}>
                     <Partida />
                 </div>
-                <div>
+                <div style={{float: "left", "marginRight": "10px"}}>
                     <Time />
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import BotaoGol from './BotaoGol'
 
-class Time extends Component {
+class Time extends React.Component {
     render() {
         return (
             <div>
