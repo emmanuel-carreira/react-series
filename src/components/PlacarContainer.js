@@ -42,6 +42,7 @@ class PlacarContainer extends React.Component {
                     <h3>Visitante</h3>
                     <Time nome={visitante.nome} gols={this.state.gols_visitante} marcarGol={this.marcarGolVisitante.bind(this)} />
                 </div>
+                <div>{this.props.clima}</div>
                 <div style={{clear: "both"}}></div>
             </div>
         );
@@ -49,3 +50,12 @@ class PlacarContainer extends React.Component {
 }
 
 export default PlacarContainer;
+
+PlacarContainer.propTypes = {
+    clima: React.PropTypes.string,
+    tempo: React.PropTypes.number.isRequired,
+};
+
+PlacarContainer.defaultProps = {
+    clima: 'Ensolarado',
+};
